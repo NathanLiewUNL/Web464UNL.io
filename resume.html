@@ -5,14 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel = "stylesheet" href ="./style.css"> 
 </head>
 <body>
-    <a href ="index.html">Home</a>
-    <a href ="resume.html">Resume</a>  
-    <a href ="project.html">Project</a>  
-    <a href ="contact.html">Contact</a>  
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id ="my-dropdown">
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div> 
+        <button id="mode-toggle">Light/Dark</button>
+    </div> 
     <h2>Resume</h2>
-    <article id="work" class="panel">
+    <div id="work" class="panel">
     
         <section>
             <div class="row">
@@ -22,8 +33,26 @@
                 </div>
             </div>
         </section>
-    </article>
+    </div>
+    <script>
+                function toggleMode() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+        var modeToggle = document.querySelector("#mode-toggle");
+        modeToggle.addEventListener("click", toggleMode);
 
+        const dropdown = document.getElementById("my-dropdown");
+
+        dropdown.addEventListener("mouseover", function() {
+          document.body.style.backgroundColor = "	#ffe5b4";
+        });
+
+        dropdown.addEventListener("mouseout", function() {
+          document.body.style.backgroundColor = "";
+        });
+
+      </script>
 
 </body>
 </html>
