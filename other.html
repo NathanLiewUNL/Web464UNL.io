@@ -1,0 +1,183 @@
+<!-- /* Written by:Nathan Liew */ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="assets/css/other.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css" integrity="sha512-mR/b5Y7FRsKqrYZou7uysnOdCIJib/7r5QeJMFvLNHNhtye3xJp1TdJVPLtetkukFn227nKpXD9OjUc09lx97Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>Document</title>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/9d883ea6b3.js" crossorigin="anonymous"></script>
+      <script src="scripts/contact.js"></script>
+		  <script src="scripts/contactValidate.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="other.html">Main</a>
+      <a href="login.html">Login</a>
+      <!-- <div class="dropdown">
+        <button class="dropbtn">Sign Up
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content "id ="my-dropdown">
+          <a href="project.html">Create Account</a>
+          <a href="login.html">Login</a>
+        </div>
+      </div>  -->
+      <div class="dropdown">
+        <button class="dropbtn">Shops
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content "id ="my-dropdown">
+          <a href="login.html">Coffee Shop</a>
+          <a href="login.html">Candle Shop</a>
+        </div>
+      </div> 
+      <button id="mode-toggle">Light/Dark</button>
+    </div>
+
+    <!-- <div class="img clear"> -->
+    <!-- <img src="images/pic4.jpeg" alt="Coffee" style="width:100%; height: 100%;"> -->
+    <div class="moving-bg" style="width:100%; height: 100%;" ></div>
+    <div class="container">
+        <div class = "font top"  >
+          <i class="fa-solid fa-menorah" style="font-size: 3em;"></i>
+          <i class="fa-solid fa-plus" style="font-size: 2em;"></i>
+          <i class="fa-solid fa-mug-hot" style="font-size: 3.4em;"></i>
+          <i class="fa-solid fa-plus" style="font-size: 2em;"></i>
+          <i class="fa-solid fa-laptop-code"style="font-size: 3em;"></i>
+          <i class="fa-solid fa-equals" style="font-size: 2em;"></i>
+          <i class="fa-solid fa-arrow-up-right-dots" style="font-size: 3em;"></i>
+        </div>
+    </div>
+
+    <div class = "centered"> <h1>Software Developer,</h1>
+      <h1>Coffee & Candle</h1>
+      <h1>Ethusiast</h1>
+      <div style="left:90%">
+      <a href="https://www.linkedin.com/in/nathan-liew-57b4671b1/" class="peach-button">Connect via LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="row" style="border-style:outset;">
+      <div class="img zoom clear">
+        <a href="other.html">
+          <img src="images/candle1.jpg" alt="Example Image" height="350px" width="400px">
+        </a>
+      </div>
+      <div class="text">
+        <h2>CANDLE SHOP</h2>
+        <p>Candles can improve productivity when coding by providing a relaxing and calming environment. The warm glow and soft lighting of a candle can help reduce eye strain and create a comfortable atmosphere that can promote focus and concentration. Additionally, the gentle scent of a candle can help to reduce stress and anxiety, which can be particularly helpful for those who spend long hours sitting in front of a computer screen. Using candles during coding sessions can also create a sense of routine and structure, which can be beneficial for staying on task and maintaining productivity over time. Overall, incorporating candles into your workspace can be a simple but effective way to enhance your coding experience and boost your productivity.</p>
+        <div style="align-items: center;">
+          <a href="login.html"><button class="peach-button2">  Visit Candle Store</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="border-style:outset;">
+      <div class="img zoom clear">
+        <a href="other.html">
+          <img src="images/coffee3.webp" alt="Example Image" height="350px" width="400px" >
+        </a>
+      </div>
+      
+      <div class="text">
+        <h2>COFFEE SHOP</h2>
+          <ul>
+            <li> Coffee has been a popular choice for programmers who need to stay focused and productive for extended periods. </li> 
+            <li> Coffee increase dopamine levels in the brain, which improve mood and motivation, allowing programmers to stay energized and engaged in their work for longer periods.
+            </li>
+            <li>  The caffeine in coffee helps stimulate the central nervous system, increasing alertness and concentration,essential for programming tasks that require sustained attention and mental effort. </li>
+            <li> Coffee help to improve short-term memory and cognitive function, making it easier for programmers to recall complex coding concepts and algorithms. </li>
+          </ul>
+          <a href="login.html"><button class="peach-button2"> Visit Coffee Store</button></a>
+      </div>
+    </div>
+
+
+
+    <form id="rateForm" onsubmit="ratingFormProcess()">
+      <div class="rating-stars">
+        <h1 style="font-family: cursive;">Rate My Website</h1> 
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1" class="fa fa-star" style="font-size: 3em" ></label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2" class="fa fa-star" style="font-size: 3em"></label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3" class="fa fa-star" style="font-size: 3em"></label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4" class="fa fa-star  "style="font-size: 3em"></label>
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5" class="fa fa-star "  style="font-size: 3em"></label>
+        <div>
+   
+          <!-- <input type="submit" value="Submit" class="peach-button3" onclick="showAlert()" /> -->
+          <input type="submit" value="Submit" class="peach-button3" />
+        </div>
+      </div>
+    </form>
+
+
+
+
+    <div class="flex-container" >
+      <div class="flex-item flex-1">
+        <div style="color: black;">  A sensational, </div>
+      <span> handmade </span>
+      <div style="color: black;">  fragrance </div>
+      <div> brand</div>
+
+      </div>
+      <div class="flex-item clear">
+        <a href="https://example.com">
+          <img src="images/coffeecandle2.webp" alt="Example Image" height="400px" width="655px" >
+        </a>
+      </div>  
+    </div>
+
+    <div class="flex-container" >
+      <div class="flex-item clear">
+        <a href="https://example.com">
+          <img src="images/coffeecandle1.jpeg" alt="Example Image" height="400px" width="625px" class="rounded float-right" >
+        </a>
+      </div>
+
+      <div class="flex-item  flex-1">
+        <div style="color: black;">  Improve </div>
+          <span> productivity, </span>
+          <span> connectivity, and </span>
+          <div style="color: black;">  focus</div>
+        </div>
+      </div>  
+    </div>
+
+  
+
+
+
+  <script>
+      function toggleMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+      var modeToggle = document.querySelector("#mode-toggle");
+      modeToggle.addEventListener("click", toggleMode);
+
+      const dropdown = document.getElementById("my-dropdown");
+
+      dropdown.addEventListener("mouseover", function() {
+        document.body.style.backgroundColor = "	#ffe5b4";
+      });
+
+      dropdown.addEventListener("mouseout", function() {
+        document.body.style.backgroundColor = "";
+      });
+
+    </script>
+  </body>
+</html>

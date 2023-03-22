@@ -1,0 +1,423 @@
+/* Written by: Nathan Liew */
+
+p{
+    color: rgb(16, 16, 44); 
+    background:rgb(253, 253, 253);
+    /* font: size 100px; */
+}
+
+
+main {
+    background-color: rgb(255, 210, 187);
+    padding: 10px;
+    border: 2px solid rgb(217, 93, 93);
+
+    font-family: Verdana, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  .classEnrol { width: 1000px; }
+  
+  .Feedback { width: 450px; }
+  
+  .Centered { text-align: center; }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background:rgb(7, 7, 7);
+    height: 80px;
+  }
+
+  h1 {
+    text-align: center;
+    line-height: 59px; 
+    font-size: 350%;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    /* padding: 50px 50px 50px 50px; */
+    /* font-family:cursive; */
+  }
+
+
+  .font{
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+  }
+
+  article {
+    padding: 20px;
+    margin: 20px;
+    background:red
+  }
+
+ 
+  section {
+    display: flex;
+  }
+
+  article {
+    flex: 1 200px;
+  }
+
+  article:nth-of-type(3) {
+    flex: 3 180px;
+    display: flex;
+    flex-flow: column;
+  }
+
+
+  /*dropdown*/
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* light dark mode */
+  #mode-toggle {
+    background-color: #fff; /* Light mode background color */
+    color: #000; /* Light mode text color */
+    border: 2px solid #000; /* Button border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Cursor style */
+  }
+
+  .light-mode {
+    background-color: #fff; /* Light mode background color */
+    color: #000; /* Light mode text color */
+  }
+
+  .dark-mode {
+    background-color: #000; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+  } 
+
+
+/* image */
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("images/pic4.jpeg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  .top {
+    position: absolute;
+    top: 15%;
+    left: 33%;
+  }
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  /* .centered2 {
+    position: absolute;
+    margin-top: 200px;
+    font-size: larger;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+  .peach-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7c096;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-left: 200px;
+  }
+
+  .peach-button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: peachpuff;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-left: 600px;
+  }
+
+
+  .peach-button3 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7c096;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-block-start: 2.5em;
+    margin-block-end: 2em;
+}
+
+  
+  .submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 60px;
+  
+  }
+
+
+
+  .peach-button:hover  {
+    background-color: #FFB347;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  .peach-button2:hover {
+    background-color: #070707;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  .peach-button3:hover {
+    background-color: #070707;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  /* .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+   */
+  .row {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* margin-bottom: 20px; */
+    margin-top: 0px;
+    /* background-color: peachpuff; */
+  }
+  
+  .picture {
+    /* width: 300px; */
+    /* height: auto; */
+    margin-right: 20px;
+    filter: blur(3px)
+  }
+  
+  .text {
+    flex: 1;
+    margin: 0px 50px 0px 50px; 
+    font-family: 'Courier New', Courier, monospace;
+  }
+  h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+   .zoom {
+    transition: transform 0.5s ease;
+    filter: blur(1.2px)
+  }
+
+
+  div.zoom:hover {
+    transform: scale(1.1);
+    border: 3px solid black;
+    filter: none;
+  }
+  
+  .clear{
+    clear:both;
+    font-size:0;
+  }
+
+  div.text.p{
+    text-align: left;
+  }
+
+  
+  .peach{
+    background-color: peachpuff;
+  }
+
+
+  /*rating star*/
+  .rating-stars input[type="radio"] {
+    display: none;
+  }
+  
+  .rating-stars label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .rating-stars label:hover,
+  .rating-stars label:hover ~ label,
+  .rating-stars input[type="radio"]:checked ~ label {
+    color: #ffca28;
+  }
+
+  .rating-stars{
+    text-align: center;
+    /* margin: 70px 100px 80px 20px;  */
+    /* font-size: 200%;
+    width: 110%;
+    height: 110%;
+    size: 200%; */
+    /* background-color: peachpuff; */
+  }
+
+  .cand1{
+    padding-left: 630px;
+    /* margin-left: 90px;
+    text-align: left; */
+  }
+
+
+  /*flex*/
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap; /* ensures items stay in one row */
+    background-color: #f2f3f4;
+
+  }
+
+  
+  .flex-item {
+    flex: 1; /* sets each item to take up an equal amount of space */
+  }
+
+.flex-1{
+ margin: 100px 150px 50px 150px;
+ font-size: 40px;
+ font-weight:100;
+ font-family: Karla,sans-serif;
+ text-align: center;
+
+}
+
+/*moving image*/
+.moving-bg {
+  background-image: url('images/pic4.jpeg');
+  background-size: cover;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}

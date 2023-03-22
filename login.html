@@ -1,0 +1,69 @@
+<!-- Written by:Nathan Liew  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="other.html">Main</a>
+        <a href="login.html">Login</a>
+        <div class="dropdown">
+          <button class="dropbtn">Shops
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content "id ="my-dropdown">
+            <a href="login.html">Coffee Shop</a>
+            <a href="login.html">Candle Shop</a>
+          </div>
+        </div> 
+        <button id="mode-toggle">Light/Dark</button>
+      </div>
+        <div class="wrapper">
+            <div class="heading">
+                <h1 style="font-family:'cursive';">Welcome!</h1>
+            </div>
+            <div class="form">
+                <form>
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Username" name="">
+                    </span><br>
+                    <span>
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" name="">
+                    </span><br>
+                    <button type="button" style="width:300px; height:40px;background-color: #337af4;color: white;">Login</button>
+                        <!-- <button style=" height:40px" style="width:300px" style="font-weight:bold";>login</button> -->
+                </form>
+            </div>
+            </div>
+        </div> 
+
+        <script>
+          function toggleMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+          }
+          var modeToggle = document.querySelector("#mode-toggle");
+          modeToggle.addEventListener("click", toggleMode);
+    
+          const dropdown = document.getElementById("my-dropdown");
+    
+          dropdown.addEventListener("mouseover", function() {
+            document.body.style.backgroundColor = "	#ffe5b4";
+          });
+    
+          dropdown.addEventListener("mouseout", function() {
+            document.body.style.backgroundColor = "";
+          });
+    
+        </script>
+</body>
+</html>

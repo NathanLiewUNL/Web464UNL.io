@@ -1,0 +1,171 @@
+/* Written by:Nathan Liew */
+  /*dropdown*/
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* light dark mode */
+  #mode-toggle {
+    background-color: #fff; /* Light mode background color */
+    color: #000; /* Light mode text color */
+    border: 2px solid #000; /* Button border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Cursor style */
+  }
+
+  .light-mode {
+    background-color: #fff; /* Light mode background color */
+    color: #000; /* Light mode text color */
+  }
+
+  .dark-mode {
+    background-color: #000; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+  } 
+
+  body{
+    /* background: url("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?cs=srgb&dl=pexels-s-migaj-747964.jpg&fm=jpg"); */
+    background: url(images/vecteezy_cozy-winter-or-autumn-morning-at-home-hot-coffee-with-gold_12881332_169.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 100vh;
+}
+.wrapper{
+    width:350px;
+    margin:8% auto;
+    padding:10px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.55);
+	   box-shadow: 0 0 17px rgb(25, 24, 24);
+}
+.heading {
+	text-align: center;
+	padding-top: 40px;
+}
+.heading h1 {
+	color: rgb(255, 255, 255);
+	font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-bottom: 90px;
+}
+
+form {
+	text-align: center;
+}
+ form input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    box-sizing: border-box;
+	font-size: 15px;
+	color: rgb(24, 23, 23);
+    border-radius: 10px;
+} 
+
+ /* .button-1{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    box-sizing: border-box;
+	font-size: 15px;
+	color: rgb(24, 23, 23);
+    border-radius: 10px;
+}   */
+form input{
+    padding-left: 40px;
+}
+form i {
+	position: absolute;
+	left: 15px;
+	color: #333;
+	font-size: 17px;
+	top: 2px;
+}
+form span {
+	position: relative;
+}
+form ::placeholder {
+    color: rgb(119, 119, 165);
+    font-weight: bold;
+  }
+form button {
+	padding-left: 0;
+	background-color: #337af4;
+	letter-spacing: 1px;
+	font-weight: bold;
+    border-radius: 15px;
+}
+form button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #b511f6;
+    color:white;
+}
+
+
